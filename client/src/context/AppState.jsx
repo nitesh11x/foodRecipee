@@ -3,7 +3,8 @@ import { AppContext } from "./AppContext";
 import axios from "axios";
 
 const AppState = ({ children }) => {
-  const url = "http://localhost:3000/api";
+  // const url = "http://localhost:3000/api";
+  const url = "https://foodrecipee.onrender.com/api";
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const [recipe, setRecipe] = useState([]);
   const [savedRecipe, setSavedRecipe] = useState([]);
